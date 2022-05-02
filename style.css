@@ -1,0 +1,3401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(27, 25, 25);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/*.................................................................HEADER DE LA PAGINA...................................................................*/
+
+header{
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    z-index: 20;
+}
+
+
+.box-logo-icones{
+    width: 100%;
+    height: 50%;
+    background-color: #FFCD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-logo img{
+    width: 45%;
+    height: 90%;
+}
+
+.box-icones{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-icones>div{
+    width: 5%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-icones> div a{
+    text-decoration: none;
+}
+
+.box-icones>div i{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.box-icones>div:hover{
+    transform: scale(1.3);
+    transition: 0.9s;
+}
+
+.box-icones .phone-icon{
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .phone-icon{
+    color: white;
+}
+
+.box-icones .facebook-icon{
+    border-radius: 50%;
+    background-color: #06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .facebook-icon{
+    color: white;
+}
+
+.box-icones .instagram-icon{
+    border-radius: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .instagram-icon{
+    color: white;
+}
+
+.box-icones .whatsapp-icon{
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .whatsapp-icon{
+    color: white;
+}
+
+.box-icones .email-icon{
+    border-radius: 50%;
+    background-color:	#FF1493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.box-icones .email-icon{
+    color: white;
+}
+
+.box-menu{
+    /*background-color: #06b6ff;*/
+    /*background-color: rgba(0, 0, 0, 0.377);*/
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+
+}
+
+.menu li{
+    list-style: none;
+    overflow: hidden;
+}
+
+/*.menu li:hover{
+    background-color: brown;
+    border-radius: 3px;
+}*/
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.menu li a::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: brown;
+    position: absolute;
+    left: -270px;
+    top: 25px;
+    z-index: 1;
+}
+
+.menu li a:hover::after{
+    color: #FFCD01;
+    left: 0px;
+    transition: 0.2s;
+}
+
+
+
+.menu-responsive{
+    width: 10%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-responsive i{
+    color: white;
+    font-size: 50px;
+}
+
+/*..............................................................FOOTER DE LA PAGINA...............................................................*/
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color:#06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1800px;
+}
+
+
+.box-logo-icones-footer{
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+
+.logo-footer{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 80%;
+    position: relative;
+}
+
+.icones-footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.icones-footer>div{
+    width: 13%;
+    height: 30%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+}
+
+.icones-footer>div i{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.icones-footer>div:hover{
+    transform: scale(1.3);
+    transition: 0.9s;
+}
+
+.footer-phone{
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-phone i{
+    color: white;
+}
+
+.footer-facebook{
+    border-radius: 50%;
+    /*background-color: #06b6ff;*/
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-facebook i{
+    color: white;
+}
+
+.footer-instagram{
+    border-radius: 50%;
+    background-color: #FFCD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-instagram i{
+    color: white;
+}
+
+.footer-whatsapp{
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-whatsapp i{
+    color: white;
+}
+
+.footer-email{
+    border-radius: 50%;
+    background-color:	#FF1493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-email i{
+    color: white;
+}
+
+
+.box-servicios-footer{
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+
+
+.texto-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-footer h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.servicio-footer-list{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 20px;
+}
+
+.servicio-footer-list>div{
+    height: 35px;
+}
+
+.servicio-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.servicio-1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-1 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-2 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-3 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-3 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-4 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-4 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-5 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-5 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.box-contactos-footer{
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+
+
+.texto-footer-contratacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-footer-contratacion h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contratacion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.phone-escritorio{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-escritorio img{
+    width: 50%;
+    position: relative;
+}
+
+.text-escritorio{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.text-escritorio h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.text-escritorio h6{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.atencion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+
+.phone-atencion{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-atencion img{
+    width: 30%;
+    position: relative;
+}
+
+.text-atencion-cliente{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+    display: block;
+}
+
+.text-atencion-cliente h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.text-atencion-cliente h6{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+
+.ubicacion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.icon-maps{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-maps i{
+    font-size: 80px;
+    color: brown;
+}
+
+.ubicacion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ubicacion h5{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-weight: normal;
+}
+
+/*............................................................CHATBOX..........................................................................................*/
+
+.div-chatbox{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 500px;
+    right: 50px;
+    opacity: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 10;
+
+}
+
+
+.box-chat{
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    opacity: 0;
+    position: relative;
+    top: 90px;
+    right: 170px;
+    
+}
+
+
+.box-chat img{
+    width: 100%;
+    height: 60%;
+    opacity: 0.3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
+.head-chatbox{
+    width: 100%;
+    height: 22%;
+    position: relative;
+    top: -385px;
+    background-color: brown;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+}
+
+
+.head-chatbox img{
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+
+
+.icon-image-chatbox{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.icon-image-chatbox img{
+    opacity: 1;
+    width: 22%;
+}
+
+
+.icon-image-chatbox h3{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.icon-image-chatbox-text{
+    width: 100%;
+    height: 5%;
+    position: relative;
+    top: -410px;
+}
+
+
+.icon-image-chatbox-text h6{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding-left: 20px;
+    display: none;
+}
+
+
+
+.box-message-chatbox{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    position: relative;
+    top: -415px;
+    display: flex;
+}
+
+
+.box-message-chatbox img{
+    opacity: 1;
+    width: 17%;
+    height: 60px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+
+
+.box-message-chatbox h6{
+    font-family: sans-serif;
+    font-weight: normal;
+    position: relative;
+    top: 70px;
+    left: 0px;
+    font-size: 14px;
+    background-color: lightgray;
+    height: 70px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.box-writter-chatbox{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+    position: relative;
+    top: -420px;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.box-writter-chatbox textarea{
+    width: 85%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 2px lightgray solid;
+    border-bottom: none;
+    background-color: brown;
+    color: white;
+}
+
+
+.btn-send-chatbox{
+    width: 15%;
+   
+    background-color: #06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-send-chatbox a{
+    text-decoration: none;
+}
+
+
+.btn-send-chatbox i{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+.icon-action-comment-close{
+    position: fixed;
+    top:815px;
+    right: 160px;
+    z-index: 10;
+}
+
+
+.icon-comment-chatbox{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+    cursor: pointer;
+}
+
+
+.icon-comment-chatbox i{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.icon-close-chatbox{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+    cursor: pointer;
+}
+
+
+.icon-close-chatbox i{
+    color:black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------DIV POPBOT--------------------------------------------------------------------*/
+
+
+.div-pop-mensage{
+    width: 5%;
+    height: 200px;
+    top:-690px;
+    left: 1790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    position: relative;
+}
+
+
+.box-pop-mensages{
+    width: 4%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 270px;
+    z-index: 10;
+
+}
+
+.pop-whatsapp{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-whatsapp i{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-email{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 50%;
+    opacity: 0;
+    position: relative;
+    top: 20px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-email i{
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-phone{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF1493;
+    border-radius: 50%;
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+
+}
+
+
+.pop-phone i{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-headphones{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 3000;
+    position: relative;
+    top: 80px;
+    opacity: 1;
+    overflow: hidden;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-headphones img{
+    width: 120px;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+    position: relative;
+    
+}
+
+
+.pop-close{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: 0;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-close i{
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+
+.action-pop-icones{
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.action-pop-icones-close{
+    opacity: 0;
+}
+
+
+.headphone-close{
+    opacity: 0;
+}
+
+
+.headphone-open{
+    opacity: 1;
+}
+
+
+
+.action-open{
+    display: block;
+    position: relative;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+
+.action-close{
+    opacity: 0;
+}
+
+/*............................................................DIV CLIENTES......................................................................................*/
+
+.box-clientes{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 200px;
+    z-index: 0;
+}
+
+.box-clientes h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+.grupos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.grupos::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    left: -1200px;
+    z-index: 1;
+    animation: animacao 2s infinite ease;
+}
+
+@keyframes animacao{
+    100%{
+        left: 0px;
+    }
+}
+
+.grupos>div{
+    width: 20%;
+    display: block;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+}
+
+.box-clientes>div img{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grupo1 img{
+    margin: 20px auto;
+    position: relative;
+}
+
+.grupo2 img{
+    position: relative;
+    margin: 17px auto;
+}
+
+
+.grupo3 img{
+    position: relative;
+    margin: 10px auto;
+}
+
+.logo_sandag{
+    position: relative;
+    top: 30px;
+}
+
+
+.grupo4 img{
+    position: relative;
+    margin: 20px auto;
+}
+
+.logo_ecoambiante{
+    position: relative;
+    top: 10px;
+}
+
+
+.grupo1 .logo_cosmopolitan{
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.grupo1 .logo_sanysidro{
+    position: relative;
+    top: -60px;
+}
+
+.grupo1 .logonewcity_residencial{
+    position: relative;
+    top: -30px;
+}
+
+.grupo2 .logo_sat{
+    width: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.grupo1 .logo_caliente{
+    position: relative;
+    top: -100px;
+}
+
+.grupo2 .logo_imaxess{
+    width: 70%;
+    position: relative;
+    top: -27px;
+}
+
+.grupo2 .logo_centura{
+    width: 80%;
+    position: relative;
+    top: -70px;
+}
+
+/*.grupo2 .logo_newcity_residencial{
+    width: 50%;
+}*/
+
+.grupo2 .logo_iprk{
+    width: 80%;
+    position: relative;
+    top: 30px;
+}
+
+.grupo3 .logo_excel{
+    width: 70%;
+    position: relative;
+    top: -50px;
+}
+
+.grupo3 .logohotel_tijuana{
+    position: relative;
+    top: -10px;
+}
+
+.grupo3 .logo_bjrr{
+    width: 50%;
+    position: relative;
+    top: -20px;
+}
+
+.grupo3 .logo_sandag{
+    width: 90%;
+    position: relative;
+    top: 60px;
+}
+
+.grupo4 .logo_coparmex{
+    width: 70%;
+    position: relative;
+    top: -75px;
+}
+
+.grupo4 .logo_lucerna{
+    width: 80%;
+    position: relative;
+    top: -40px;
+}
+
+.grupo4 .logo_furmex{
+    width: 90%;
+    position: relative;
+    top: 15px;
+}
+
+.grupo4 .logo_ecoambiante{
+    width: 65%;
+    position: relative;
+    top: 20px;
+}
+
+
+/*-----------------------------------------------------------------------BLOCO CERTIFICADOS------------------------------------------------------------------------*/
+
+.certificados{
+    width: 100%;
+    height: 960px;
+    position: relative;
+    top: 1200px;
+}
+
+
+.certificados img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.change{
+    background-color: blue;
+}
+
+
+.texto-certificado{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.texto-certificado h1{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.texto-certificado h3{
+    color: orange;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    position: relative;
+    top: 15px;
+}
+
+
+.todoscertificados{
+    width: 100%;
+    height: 75%;
+    position: relative;
+    top: 200px;
+    transition: 0.7s;
+}
+
+.grupo1{
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.grupo1>div{
+    width: 15%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px white;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: 2s;
+    position: relative;
+    
+}
+
+
+.grupo1>div::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(165, 42, 42, 0.37);
+    position: absolute;
+    z-index: 1;
+    top: -400px;
+    transition: 0.5s;
+}
+
+.grupo1>div:hover::after{
+    top: 0px;
+}
+
+.grupo1>div img{
+    padding: 30px;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.863);
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.grupo2{
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.grupo2>div{
+    width: 15%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px white;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+
+
+.grupo2>div::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(165, 42, 42, 0.37);
+    position: absolute;
+    z-index: 1;
+    top: -400px;
+    transition: 0.9s;
+}
+
+.grupo2>div:hover::after{
+    top: 0px;
+}
+
+.grupo2>div img{
+    padding: 30px;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.863);
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*.............................................................SLIDE-SHOW CONTAINER..............................................................................*/
+
+main{
+    top: 180px;
+    z-index: 0;
+}
+
+/*............................................................DIV FUNDO..........................................................................................*/
+.div-fundo{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+video{
+    position: relative;
+    top: 100px;
+    box-shadow: 0px 0px 4px white;
+    background-color: rgba(0, 0, 0, 0.055);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+  }
+  
+  .typing-demo {
+    width: 24ch;
+    animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 5em;
+    color: white;
+    padding-left: 10px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+  .wrapper1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+  }
+  
+  .typing-demo1 {
+    width: 43ch;
+    animation: typing 10s steps(43), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+    color: white;
+    padding-left: 10px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink1 {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+
+  .div_mie_logo{
+      width: 30%;
+      height: 200px;
+      display: inline-block;
+      float: right;
+      right: 10px;
+      z-index: 1;
+      position: absolute;
+      top: 300px;
+  }
+
+  .div_mie_logo img{
+      width: 0%;
+      animation: animate 5s infinite ease;
+      position: relative;
+  }
+
+  @keyframes animate {
+
+    100%{
+        width: 100%;
+    }
+  }
+     
+
+
+/*....................................................................DIV NUESTROS SERVICIOS................................................................................*/
+
+
+.div-contenido-servicios{
+    width: 100%;
+    height: 700px;
+    z-index: 0;
+    position: relative;
+    top: 600px;
+}
+
+
+.div-contenido-servicios .nuestros-servicios h1{
+    color: gray;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.texto-servicios{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-servicios h1{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.tipos-servicios{
+    width: 85%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 50px;
+    position: relative;
+    top: 170px;
+}
+
+
+.box-servicios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.internet-dedicado{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.internet-dedicado img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-dedicado img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-dedicado h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.internet-dedicado p{
+    position: relative;
+    top: -280px;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.internet-dedicado a{
+    text-decoration: none;
+}
+
+
+
+.internet-dedicado .btn-dedicado{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-dedicado .btn-dedicado:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+.internet-simetrico{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-simetrico img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-simetrico img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-simetrico h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.internet-simetrico p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-simetrico a{
+    text-decoration: none;
+}
+
+
+.internet-simetrico .btn-simetrico{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-simetrico .btn-simetrico:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+.internet-nube{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-nube img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-nube img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-nube h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.internet-nube p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-nube a{
+    text-decoration: none;
+}
+
+
+.internet-nube .btn-nube{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-nube .btn-nube:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+
+.internet-consultoria{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-consultoria img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-consultoria img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-consultoria h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.internet-consultoria p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-consultoria a{
+    text-decoration: none;
+}
+
+
+.internet-consultoria .btn-consultoria{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-consultoria .btn-consultoria:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+/*............................................................................PARTE DE LA DIRRECCION.............................................................*/
+
+
+/*.div-formulario{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}*/
+
+
+/*.div-formulario img{
+    width: 100%;
+    height: 99%;
+    opacity: 0.3;
+}*/
+
+
+.box-text-formulario{
+    width: 46.5%;
+    height: 18%;
+    position: relative;
+    top: 280px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.671);
+    /*position: absolute;
+    top: 220px;
+    left: 540px;*/
+}
+
+
+.box-text-formulario .texto-direccion{
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding: 30px;
+    font-weight: normal;
+}
+
+
+
+.box-formulario-direccion{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 330px;
+    /*position: absolute;
+    top: 430px;*/
+}
+
+
+.box-formulario-direccion form{
+    height: 100%;
+    height: 100%;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.452);
+    border-radius: 6px;
+}
+
+
+.box-formulario-direccion form label{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.box-formulario-direccion form input{
+    height: 35px;
+    text-align: center;
+    padding-left: 5px;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    
+}
+
+
+
+.nombreempresa{
+    width: 100%;
+}
+
+.div-direccion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.div-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-contacto>input{
+    width: 32%;
+}
+
+
+.nombre{
+    width: 32.9%;
+}
+
+.telefone{
+    width: 32.9%;
+}
+
+.email{
+    width: 32.9%;
+}
+
+
+
+.btn-enviar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.btn-enviar button{
+    width: 50%;
+    height: 38px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+
+.btn-enviar button:hover{
+    background-color: green;
+    transform: translateY(-10px);
+}
+
+
+
+.calle{
+    width: 40%;
+}
+
+
+.numero{
+    width: 8%;
+}
+
+.colonia{
+    width: 20%;
+}
+
+.ciudad{
+    width: 10%;
+    height: 31px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.postal{
+    width: 8%;
+}
+
+
+/*.............................................................DIV CONTACTO.....................................................................................*/
+
+
+/*.div-formulario{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+
+.div-formulario img{
+    width: 100%;
+    height: 99%;
+    opacity: 0.3;
+}*/
+
+.box-text-formulario-contacto{
+    width: 60%;
+    height: 18%;
+    position: relative;
+    top: 250px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.671);
+   
+}
+
+
+
+.box-text-formulario-contacto .text-form-contacto{
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding: 30px;
+    font-weight: normal;
+   
+}
+
+
+.box-formulario-contacto{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 380px;
+}
+
+
+.box-datos{
+    width: 30%;
+    height: 90%;
+    /*background-color: #454545;*/
+     background-color: rgba(0, 0, 0, 0.438);
+}
+
+.box-datos .address-email{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.address-email .address{
+    
+    width: 50%;
+    height: 100%;
+}
+
+
+.address-email .email{
+    
+    width: 50%;
+    height: 100%;
+}
+
+.box-address{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address i{
+    font-size: 70px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.address h4{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.address h5{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.box-email{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.email i{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.email h4{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.email h5{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.box-phone{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.phone i{
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.phone h4{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.phone h5{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+
+.box-redes{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.redes i{
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.redes h4{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.redes h5{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+
+.box-datos .phone-redes{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.phone-redes .phone{
+    
+    width: 50%;
+    height: 100%;
+}
+
+
+.phone-redes .redes{
+    
+    width: 50%;
+    height: 100%;
+}
+
+.box-map{
+    width: 30%;
+    height: 90%;
+    
+}
+
+
+.box-map iframe{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+.div-pop-mensage{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top:570px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.box-pop-mensages{
+    width: 4%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: 5000;
+}
+
+.pop-whatsapp{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+
+.pop-whatsapp i{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-email{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    position: relative;
+    top: 20px;
+}
+
+
+.pop-email i{
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-phone{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    position: relative;
+    top: 40px;
+
+}
+
+
+.pop-phone i{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-headphones{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 3000;
+    position: relative;
+    top: 80px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+
+.pop-headphones img{
+    width: 120px;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+    position: relative;
+    opacity: 1;
+}
+
+
+.pop-close{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: orange;
+}
+
+
+.pop-close i{
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+/*.................................................................DIV AVISO DE PRIVACIDAD..........................................................................*/
+
+
+.box-text-formulario-aviso{
+    width: 100%;
+    height: 930px;
+    position: fixed;
+    top: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.box-text-formulario-aviso iframe{
+    width:100%;
+    height: 100%;
+    position: relative;
+    border: none;
+}
+
+
+/*.............................................................DIV NUESTRA TECNOLOGIA.............................................................................*/
+
+
+/*.div-formulario{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.div-formulario img{
+    width: 100%;
+    height: 99%;
+    opacity: 0.3;
+}*/
+
+.box-text-formulario-tecnologia{
+    width: 80%;
+    height: 18%;
+    position: relative;
+    top: 220px;
+    background-color: rgba(0, 0, 0, 0.705);
+    margin: auto;
+    display: block;
+}
+
+
+.box-text-formulario-tecnologia .texto-tecnologia{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: normal;
+    padding: 20px;
+    
+}
+
+
+.box-formulario{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 381px;
+    overflow: hidden;
+}
+
+
+.dedicado{
+    width: 20%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 7px;
+    opacity: 1;
+    transition: 3s;
+    left: -100px;
+    position: relative;
+    display: block;
+}
+
+
+.div-texto-dedicado{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px white solid;
+}
+
+
+.div-texto-dedicado h3{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+
+.div-image-dedicado-tecnologia{
+    width: 100%;
+    height: 50%;
+}
+
+
+.dedicado img{
+    width: 100%;
+    height: 60%;
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.div-texto-dethales-dedicado{
+    width: 100%;
+    position: relative;
+    top: -200px;
+}
+
+
+.div-texto-dethales-dedicado p{
+    color: white;
+    position: relative;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+.div-texto-dedicado-bottom{
+    position: relative;
+    width: 100%;
+    height: 20.5%;
+    top: -169px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-texto-dedicado-bottom h3{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.simetrico{
+    width: 20%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 7px;
+    opacity: 1;
+    transition: 3s;
+    left: -100px;
+    position: relative;
+}
+
+
+
+.div-texto-simetrico{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px white solid;
+}
+
+
+.div-texto-simetrico h3{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+.div-image-simetrico-tecnologia{
+    width: 100%;
+    height: 50%;
+}
+
+
+.simetrico img{
+    width: 100%;
+    height: 60%;
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+
+.div-texto-dethales-simetrico{
+    width: 100%;
+    position: relative;
+    top: -200px;
+}
+
+
+.div-texto-dethales-simetrico p{
+    color: white;
+    position: relative;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+.div-texto-simetrico-bottom{
+    position: relative;
+    width: 100%;
+    height: 20.5%;
+    top: -193px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-texto-simetrico-bottom h3{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+.lanube{
+    width: 20%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 7px;
+    opacity: 1;
+    transition: 3s;
+    left: 0px;
+    position: relative;
+}
+
+
+
+.div-texto-lanube{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px white solid;
+}
+
+
+.div-texto-lanube h3{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+.div-texto-dethales-lanube{
+    width: 100%;
+    position: relative;
+    top: -200px;
+}
+
+.div-texto-dethales-lanube p{
+    color: white;
+    position: relative;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+.div-image-lanube-tecnologia{
+    width: 100%;
+    height: 50%;
+}
+
+
+.lanube img{
+    width: 100%;
+    height: 60%;
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+
+.div-texto-lanube-bottom{
+    position: relative;
+    width: 100%;
+    height: 20.5%;
+    top: -193px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-texto-lanube-bottom h3{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/*.............................................................SOBRE NUESTRA EMPRESA.............................................................................*/
+
+.box-about{
+    width: 100%;
+    height: 960px;
+    z-index: 0;
+}
+
+
+.logo-about{
+    width: 90%;
+    position: relative;
+    top: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-about img{
+    width: 30%;
+    opacity: 1;
+}
+
+
+.texto-about{
+    width: 50%;
+    height: 70%;
+    display: block;
+
+}
+
+
+.texto-about h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.texto-about h4{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+
+.texto-about h6{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+
+
+.info-about{
+    width: 60%;
+    height: 30%;
+    position: relative;
+    top: 300px;
+    display: block;
+    margin: auto;
+}
+
+
+.info-about h4{
+    font-family: sans-serif;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+.mission{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 700px;
+}
+
+
+.mission>div:hover{
+    transform: translateY(-30px);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+
+.objetivo{
+    width: 20%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+.texto-objetivo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000099;
+}
+
+
+.texto-objetivo h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+.texto-objetivo-detalhes{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+
+.texto-objetivo-detalhes img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.texto-objetivo-detalhes h5{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 20px;
+}
+
+
+.technology-nacional{
+    width: 20%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+
+.texto-technology{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000099;
+}
+
+
+.texto-technology h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+.texto-technology-detalhes{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+
+.texto-technology-detalhes img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.texto-technology-detalhes h5{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 20px;
+}
+
+
+.technology-internacional{
+    width: 20%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+.texto-technology-internacional{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000099;
+}
+
+
+.texto-technology-internacional h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+.texto-technology-internacional-detalhes{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+
+.texto-technology-internacional-detalhes img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.texto-technology-internacional-detalhes h5{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 20px;
+}
+
+
+
+.cobertura{
+    width: 100%;
+    height: 920px;
+    position: relative;
+    top: 900px;
+}
+
+
+.texto-cobertura{
+    width: 68.5%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin: auto;
+}
+
+
+.texto-cobertura h2{
+    color: white;
+    font-size: 21px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+
+.images-cobertura1{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+}
+
+
+.images-cobertura1>div:hover{
+    transform: scale(1.3);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+
+.image-1{
+    width: 17%;
+    height: 90%;
+    border: 1px white solid;
+    overflow: hidden;
+}
+
+
+.image-1 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+.image-2{
+    width: 17%;
+    height: 90%;
+    border: 1px white solid;
+}
+
+
+.image-2 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+.image-3{
+    width: 17%;
+    height: 90%;
+    border: 1px white solid;
+}
+
+
+.image-3 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+.image-4{
+    width: 17%;
+    height: 90%;
+    border: 1px white solid;
+}
+
+
+.image-4 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+.images-cobertura2{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 135px;
+}
+
+
+
+.images-cobertura2>div:hover{
+    transform: scale(1.3);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+
+.image-5{
+    width: 17%;
+    height: 100%;
+    border: 1px white solid;
+}
+
+
+
+.image-5 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+
+.image-6{
+    width: 17%;
+    height: 100%;
+    border: 1px white solid;
+}
+
+
+.image-6 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+.image-7{
+    width: 17%;
+    height: 100%;
+    border: 1px white solid;
+}
+
+
+.image-7 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+
+.image-8{
+    width: 17%;
+    height: 100%;
+    border: 1px white solid;
+}
+
+
+.image-8 img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+/*-------------------------------------------------------------RESPONSIVIDADE DEL PROYECTO-----------------------------------------------------------------------*/
+
+@media screen and (max-width: 1300px) {
+
+    .box-logo-icones{
+        display: none;
+    }
+
+    .box-menu{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 100px;
+        background-color: rgba(0, 0, 0, 0.719);
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+    .menuopac{
+        opacity: 1;
+    }
+
+    .menu-responsive{
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 10px;
+        cursor: pointer;
+        position: relative;
+        top: -145px;
+    }
+
+
+    /*........................DIV FUNDO............................*/
+
+    .div-fundo{
+        display: none;
+    }
+
+    .wrapper{
+        display: none;
+    }
+
+
+    .wrapper1{
+        display: none;
+    }
+
+    .text-clientes{
+        width: 100%;
+        position: relative;
+        top: 100px;
+    }
+
+    .text-clientes h1{
+        width: 100%;
+    }
+
+
+    .grupos{
+        width: 100%;
+        border-radius: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .box-logo-icones-footer{
+        display: none;
+    }
+
+    .box-servicios-footer{
+        display: none;
+    }
+
+    .box-contactos-footer{
+        width: 100%;
+    }
+
+    .texto-footer-contratacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-footer-contratacion h1{
+        text-align: center;
+    }
+
+
+
+
+
+
+    .box-text-formulario{
+        display: none;
+    }
+  } 
