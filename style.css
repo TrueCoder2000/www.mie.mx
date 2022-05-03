@@ -632,7 +632,7 @@ footer{
 /*............................................................CHATBOX..........................................................................................*/
 
 .div-chatbox{
-    width: 100%;
+    width: 25%;
     height: 100%;
     position: fixed;
     top: 400px;
@@ -822,7 +822,7 @@ footer{
 
 .icon-action-comment-close{
     position: fixed;
-    top:815px;
+    top:315px;
     right: 160px;
     z-index: 10;
 }
