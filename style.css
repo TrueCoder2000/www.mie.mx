@@ -640,7 +640,7 @@ footer{
     width: 25%;
     height: 100%;
     position: fixed;
-    top: 400px;
+    top: 300px;
     right: 50px;
     opacity: 1;
     display: flex;
@@ -728,7 +728,7 @@ footer{
 
 .icon-image-chatbox-text h6{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     font-family: sans-serif;
     font-weight: normal;
     padding-left: 15px;
