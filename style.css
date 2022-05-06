@@ -3907,3 +3907,1578 @@ video{
         display: none;
     }
   } 
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------RESPONSIVIDADE DEL PROYECTO-----------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+    /*.............................................................RESPONSIVIDADE DE DIV MENU.................................................................................*/
+
+       
+
+        .box-logo-icones{
+            display: none;
+        }
+        
+        .box-menu{
+            flex-direction: column;
+            width: 100%;
+            height: 320px;
+            background-color: transparent;
+        }
+
+
+        .menu-responsive{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            opacity: 1;
+            background-color: #06b6ff;
+        
+        }
+        
+        .menu-responsive i{
+            color: white;
+            font-size: 50px;
+            padding-right: 5px;
+        }
+        
+        .menu-responsive i{
+            color: white;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+
+        .menu{
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+            /*background-color: rgba(0, 0, 0, 0.466);*/
+            background-color:rgba(0, 0, 0, 0.466);
+            opacity: 0;
+        }
+
+
+        .menuOpacity{
+            opacity: 1;
+        }
+
+        .menu li{
+            padding: 3px;
+        }
+
+
+        .menu li:hover{
+            background-color: #74b72e;
+            border-radius: 0px;
+        }
+
+
+        .div-texto-oferta{
+            width: 100%;
+        }
+
+
+        .div-texto-oferta h3{
+            display: none;
+        }
+
+    /*...................................................................RESPONSIVIDADE DE DIV OFERTAS...................................................................*/
+
+        .div-oferta{
+            width: 100%;
+            flex-direction: column;
+            position: relative;
+            top: 1600px;
+        }
+
+
+        .div-oferta>div{
+            width: 90%;
+            height: 550px;
+            border: 3px white solid;
+            border-radius: 0px;
+            background-color: rgba(25, 25, 112, 0.507);
+            margin-bottom: 20px;
+        }
+
+
+        .div-oferta>div .header-box{
+            width: 100%;
+            height: 80px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            background-color: #06b6ff;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+           
+        }
+        
+        
+        .div-oferta>div .header-box>div{
+            width: 100%;
+            height: 80px;
+        }
+        
+        .header-box .header-box-text{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            border-top-left-radius: 0px;
+        }
+        
+        
+        .header-box .header-box-text h3{
+            color: white;
+            font-family: sans-serif;
+            font-size: 35px;
+        }
+        
+        
+        .header-box .header-box-cantidad{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            background-color: #C71585;
+            height: 100%;
+            border-top-right-radius: 0px;
+        }
+
+
+        .div-texto-oferta{
+            display: block;
+            width: 100%;
+            position: relative;
+            top: 450px;
+        }
+
+
+        .div-texto-oferta h2{
+           background-color: #C71585;
+           font-size: 20px;
+         
+        }
+
+
+                /*.header-box .header-box-cantidad h3{
+            color: white;
+            font-family: sans-serif;
+            font-size: 35px;
+        }
+        
+        
+        .navegar-simetrico-dedicado{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+            border-bottom: 3px white dotted;
+        }
+        
+        .navegar-box-text{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            position: relative;
+        }
+        
+        
+        .navegar-box-text h3{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: normal;
+            padding-top: 20px;
+        }
+        
+        
+        .navegar-icon-text{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
+        
+        .navegar-icon-text img{
+            width: 70%;
+            padding-top: 5px;
+        }
+        
+        
+        .sin-costo-adicionales{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px white dotted;
+        }
+        
+        .sin-costo-box-text{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        
+        
+        .sin-costo-box-text h3{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: normal;
+            padding-top: 20px;
+        }
+        
+        
+        .sin-costo-icon-text{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
+        
+        .sin-costo-icon-text img{
+            width: 70%;
+            padding-top: 5px;
+        }
+        
+        
+        .atencion-personalizada{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px white dotted;
+        }
+        
+        .atencion-box-text{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        
+        
+        .atencion-box-text h3{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: normal;
+            padding-top: 20px;
+        }
+        
+        
+        .atencion-icon-text{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
+        
+        .atencion-icon-text img{
+            width: 70%;
+            padding-top: 5px;
+        }
+        
+        
+        .monitorial{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px white dotted;
+        }
+        
+        .monitorila-box-text{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        
+        
+        .monitorial-box-text h3{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: normal;
+            padding-top: 5px;
+        }
+        
+        
+        .monitorial-icon-text{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 5px;
+        }
+        
+        .monitorial-icon-text img{
+            width: 70%;
+            padding-top: 5px;
+            margin: auto;
+        }
+        
+        
+        .box-btn-contratar{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+        .box-btn-contratar a{
+            text-decoration: none;
+        }
+        
+        
+        .box-btn-contratar button{
+            width: 100%;
+            height: 30px;
+            background-color: green;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px white solid;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            box-shadow: 0px 0px 2px white;
+            
+        }
+        
+        
+        .box-btn-contratar button::after{
+            content: "CONTRATAR";
+            width: 100%;
+            height: 100%;
+            background-color: #C71585;
+            position: absolute;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+            top: -40px;
+            transition: 0.9s;
+        }
+        
+        
+        .box-btn-contratar button:hover::after{
+            top: 0px;
+        }
+        
+        
+        .div-texto-oferta{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 80px;
+            background-color: #C71585;
+            margin: auto;
+            border-radius: 50px;
+            position: relative;
+            top: 100px;
+        }
+        
+        .div-texto-oferta h2{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px;
+            font-weight: normal;
+        }*/
+
+    /*.....................................................................RESPONSIVIDADE DE FUNDO..............................................................*/
+
+    .div-fundo{
+        position: relative;
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.384);
+        flex-direction: column;
+        top: 350px;
+    }
+    
+    
+    
+    video{
+        position: relative;
+        top: 100px;
+        box-shadow: 0px 0px 4px white;
+        background-color: rgba(0, 0, 0, 0.055);
+        min-width: 100%;
+        min-height: 100%;
+        display: none;
+    }
+    
+    
+    
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 120px;
+      }
+      
+      .typing-demo {
+        width: 24ch;
+        animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2.3em;
+        color: white;
+        padding-left: 10px;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
+    
+    
+      .wrapper1 {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+      }
+      
+      .typing-demo1 {
+        width: 43ch;
+        animation: typing 10s steps(43), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+        color: white;
+        padding-left: 10px;
+        display: none;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink1 {
+        50% {
+          border-color: transparent
+        }
+      }
+    
+    
+    
+      .div_mie_logo{
+          width: 80%;
+          height: 200px;
+          /*display: inline-block;
+          float: right;
+          right: 10px;*/
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+          position: absolute;
+          top: 300px;
+      }
+    
+      .div_mie_logo img{
+          width: 0%;
+          animation: animate 5s forwards;
+          position: relative;
+      }
+    
+     /* @keyframes animate {
+    
+        100%{
+            width: 80%;
+        }
+      }
+        */
+
+
+
+        /*....................................................................RESPONSIVIDADE DE DIV NUESTROS SERVICIOS................................................................................*/
+
+
+.div-contenido-servicios{
+    width: 100%;
+    height: 700px;
+    z-index: 0;
+    position: relative;
+    top: 1900px;
+    display: none;
+}
+
+
+.div-contenido-servicios .nuestros-servicios h1{
+    color: gray;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.texto-servicios{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-servicios h1{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.tipos-servicios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /*background-color: rgba(0, 0, 0, 0.212);*/
+    position: relative;
+    top: 170px;
+    background-color: pink;
+    left: -100px;
+}
+
+
+.box-servicios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: red;
+}
+
+.internet-dedicado{
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.internet-dedicado img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-dedicado img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-dedicado h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.internet-dedicado p{
+    position: relative;
+    top: -280px;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.internet-dedicado a{
+    text-decoration: none;
+}
+
+
+
+.internet-dedicado .btn-dedicado{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-dedicado .btn-dedicado:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+.internet-simetrico{
+    width: 90%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-simetrico img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-simetrico img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-simetrico h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.internet-simetrico p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-simetrico a{
+    text-decoration: none;
+}
+
+
+.internet-simetrico .btn-simetrico{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-simetrico .btn-simetrico:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+.internet-nube{
+    width: 90%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-nube img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-nube img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-nube h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.internet-nube p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-nube a{
+    text-decoration: none;
+}
+
+
+.internet-nube .btn-nube{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-nube .btn-nube:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+
+.internet-consultoria{
+    width: 90%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-consultoria img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-consultoria img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-consultoria h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.internet-consultoria p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-consultoria a{
+    text-decoration: none;
+}
+
+
+.internet-consultoria .btn-consultoria{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-consultoria .btn-consultoria:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+/*............................................................RESPONSIVIDADE DE DIV CLIENTES......................................................................................*/
+
+.box-clientes{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 3000px;
+    z-index: 0;
+}
+
+.box-clientes h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+.grupos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    top: 90px;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+
+.grupos::after{
+    content: "";
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    left: -1200px;
+    z-index: 1;
+    animation: animacao 2s infinite ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animacao{
+    100%{
+        left: 0px;
+    }
+}
+
+.grupos>div{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+}
+
+.box-clientes>div img{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grupo1 img{
+    margin: 20px auto;
+    position: relative;
+}
+
+.grupo2 img{
+    position: relative;
+    margin: 17px auto;
+}
+
+
+.grupo3 img{
+    position: relative;
+    margin: 10px auto;
+}
+
+.logo_sandag{
+    position: relative;
+    top: 30px;
+}
+
+
+.grupo4 img{
+    position: relative;
+    margin: 20px auto;
+}
+
+.logo_ecoambiante{
+    position: relative;
+    top: 10px;
+}
+
+
+.grupo1 .logo_cosmopolitan{
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.grupo1 .logo_sanysidro{
+    position: relative;
+    top: -60px;
+}
+
+.grupo1 .logonewcity_residencial{
+    position: relative;
+    top: -30px;
+}
+
+.grupo2 .logo_sat{
+    width: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.grupo1 .logo_caliente{
+    position: relative;
+    top: -100px;
+}
+
+.grupo2 .logo_imaxess{
+    width: 70%;
+    position: relative;
+    top: -27px;
+}
+
+.grupo2 .logo_centura{
+    width: 80%;
+    position: relative;
+    top: -80px;
+}
+
+/*.grupo2 .logo_newcity_residencial{
+    width: 50%;
+}*/
+
+.grupo2 .logo_iprk{
+    width: 80%;
+    position: relative;
+    top: 50px;
+}
+
+.grupo3 .logo_excel{
+    width: 70%;
+    position: relative;
+    top: -140px;
+}
+
+.grupo3 .logohotel_tijuana{
+    position: relative;
+    top: -80px;
+}
+
+.grupo3 .logo_bjrr{
+    width: 50%;
+    position: relative;
+    top: -100px;
+}
+
+.grupo3 .logo_sandag{
+    width: 90%;
+    position: relative;
+    top: 5px;
+}
+
+.grupo4 .logo_coparmex{
+    width: 70%;
+    position: relative;
+    top: -143px;
+}
+
+.grupo4 .logo_lucerna{
+    width: 80%;
+    position: relative;
+    top: -110px;
+}
+
+.grupo4 .logo_furmex{
+    width: 90%;
+    position: relative;
+    top: -70px;
+}
+
+.grupo4 .logo_ecoambiante{
+    width: 65%;
+    position: relative;
+    top: -20px;
+}
+
+
+
+/*.................................................................................... RESPONSIVIDADE DE DIV-CERTIFICADOS....................................................................*/
+.certificados{
+    display: none;
+}
+
+
+/*....................................................................................RESPONSIVIDADE DE FOOTER..............................................................................*/
+
+footer{
+    width: 100%;
+    height: 1700px;
+    background-color:#06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2800px;
+    flex-direction: column;
+    margin-top: 400px;
+}
+
+
+.box-logo-icones-footer{
+    width: 100%;
+    height: 80%;
+    display: block;
+}
+
+.logo-footer{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 90%;
+    position: relative;
+    top: 50px;
+}
+
+.icones-footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.icones-footer>div{
+    width: 20%;
+    height: 30%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+    top: 150px;
+    margin-bottom: 10px;
+}
+
+.icones-footer>div i{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.icones-footer>div:hover{
+    transform: scale(1.0);
+    transition: 0.9s;
+}
+
+.footer-phone{
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-phone i{
+    color: white;
+}
+
+.footer-facebook{
+    border-radius: 50%;
+    /*background-color: #06b6ff;*/
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-facebook i{
+    color: white;
+}
+
+.footer-instagram{
+    border-radius: 50%;
+    background-color: #FFCD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-instagram i{
+    color: white;
+}
+
+.footer-whatsapp{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.footer-whatsapp i{
+    color: white;
+}
+
+.footer-email{
+    border-radius: 50%;
+    background-color:	#FF1493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-email i{
+    color: white;
+}
+
+
+.box-servicios-footer{
+    width: 100%;
+    height: 80%;
+    display: block;
+    position: relative;
+    top: 150px;
+}
+
+
+.texto-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-footer h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.servicio-footer-list{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 20px;
+}
+
+.servicio-footer-list>div{
+    height: 35px;
+}
+
+.servicio-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.servicio-1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-1 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-2 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-3 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-3 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-4 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-4 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-5 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-5 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.box-contactos-footer{
+    width: 100%;
+    height: 80%;
+    display: block;
+    padding: 5px;
+    position: relative;
+    top: 70px;
+}
+
+
+.texto-footer-contratacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-footer-contratacion h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contratacion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    flex-direction: column;
+    
+}
+
+.phone-escritorio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-escritorio img{
+    width: 50%;
+    position: relative;
+}
+
+.text-escritorio{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    top: -30px;
+}
+
+.text-escritorio h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-align: center;
+}
+
+.text-escritorio h6{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    text-align: center;
+}
+
+.atencion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    flex-direction: column;
+}
+
+
+.phone-atencion{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-atencion img{
+    width: 30%;
+    position: relative;
+}
+
+.text-atencion-cliente{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+    display: block;
+}
+
+.text-atencion-cliente h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-align: center;
+}
+
+.text-atencion-cliente h6{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    text-align: center;
+}
+
+
+.ubicacion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    flex-direction: column;
+}
+
+.icon-maps{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-maps i{
+    font-size: 80px;
+    color: brown;
+}
+
+.ubicacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ubicacion h5{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+}
+
+    
+    }
