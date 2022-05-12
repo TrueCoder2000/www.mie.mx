@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direccion Disponibilidad</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+</head>
+
+<body style="background-image: url('fundo-direccion.jpg');">
+    
+    
+    <header>
+    
+        <div class="box-logo-icones">
+    
+            <!----------------------------------LOGO DEL MENU----------------------------------------------------------->
+                <div class="box-logo">
+                    <img class="image-logo" src="logo/mie_logo_white.png">
+                </div>
+    
+    
+                <!---------------------------------- LOS ICONES DEL MENU----------------------------------------------------------->
+                <div class="box-icones">
+    
+                    <div class="div-phone">
+                        <a href="tel:+525633120174"><i class="fa fa-phone phone-icon"></i></a>
+                    </div>
+    
+    
+                    <div class="div-facebook">
+                        <a href="https://www.facebook.com/baptista.boukman.jeanbaptiste"><i class="fa fa-facebook facebook-icon"></i></a>
+                    </div>
+    
+                    <div class="div-instagram">
+                        <a href="#"><i class="fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                    </div>
+    
+                    <div class="div-whatsapp">
+                        <a href="http:/api.whatsapp.com/send?phone=+525633120174"><i class="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i></a>
+                    </div>
+    
+                    <div class="div-email">
+                        <a href="mailto:baptistajeanbaptiste714@gmail.com"><i class="fa fa-envelope email-icon"></i></a>
+                    </div>
+    
+                </div>
+
+                <div class="box-number"><h6>(664) 391-1254</h6></div>
+    
+        </div>
+        
+        <nav class="box-menu">
+                <div class="menu-responsive"><i class="fa fa-bars icon-menu"></i></div>
+        <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="direccion.html">Direccion Disponibilidad</a></li>
+                        <li><a href="sobre.html">Sobre Nosotros</a></li>
+                        <li><a href="tecnologia.html">Nuestra Tecnologia</a></li>
+                        <li><a href="aviso.html">Aviso de Privacidad</a></li>
+                        
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+    
+                    
+        </nav>
+    
+    </header>
+
+
+
+
+    <!--<div class="div-formulario">-->
+		<!--<img src="imageDireccion/internetfundo1.jpg">-->
+
+        <div class="container-direccion">
+
+		<div class="box-text-formulario">
+			<p class="texto-direccion">  
+				En el formulario de abajo, le pediremos la ubicación de su empresa y la información de contacto. Esto es para verificar que podamos brindar servicio de internet a su dirección utilizando nuestras redes inalámbricas o de fibra óptica.
+
+				Ingrese su dirección y otra información con la mayor precisión posible. Le notificaremos por mensaje de texto y correo electrónico si se encuentra en nuestra área de cobertura.
+
+ 				MIE opera su propia infraestructura de red y no es un revendedor. Aunque nuestra red cubre muchas áreas. 
+			</p>
+		</div>
+
+		<div class="box-formulario-direccion">
+			<form>
+				<label for="nombre">Nombre De la Empresa</label><br>
+				<input type="text" name="empresa" class="nombreempresa" id="valid" placeholder="Escribe el nombre de su empresa" autocomplete="off"><br><br>
+
+				<label for="direccion">Direccion</label><br>
+				<div class="div-direccion">
+					<input type="text" name="calle" class="calle" id="valid" placeholder="Calle" autocomplete="off">
+					<input type="text" name="numero" class="numero" placeholder="Numero" autocomplete="off">
+					<input type="text" name="colonia" class="colonia" placeholder="Colonia" autocomplete="off">
+					<!--<input type="text" name="direccion" class="ciudad" placeholder="Ciudad">-->
+					<select class="ciudad" name="ciudad">
+						<option>CIUDAD</option>
+						<option>TIJUANA</option>
+						<option>MEXICALI</option>
+						<option>ENSENADA</option>
+						<option>TECATE</option>
+						<option>ROSARITO</option>
+						<option>CD JUAREZ</option>
+						<option>NOGALES</option>
+						<option>LAREDO</option>
+					</select>
+					<input type="text" name="cp" class="postal" placeholder="CP" autocomplete="off">
+				</div><br><br>
+
+				<label for="contacto">Contacto</label><br>
+
+				<div class="div-contacto">
+					<input type="text" name="persona" class="nombrepersona " placeholder="Nombre Completo" autocomplete="off">
+					<input type="text" name="telefone" class="telefone " placeholder="Numero" autocomplete="off">
+					<input type="text" name="email" class="email" placeholder="E-mail" autocomplete="off">
+				</div><br><br>
+
+
+				<div class="btn-enviar">
+					<button class="btn-enviar-direccion" name="btn-enviar">ENVIAR</button>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+
+
+    <!--<div class="div-chatbox">
+        <div class="box-chat">
+
+                <div class="head-chatbox">
+                    <div class="icon-image-chatbox">
+                        <img src="image/icon-image-chatbox.png">
+                        <h3>CARLOS de MIE</h3>
+                    </div>
+                </div>
+
+
+                <div class="box-message-chatbox">
+                        <img src="image/icon-image-chatbox.png">
+                        <h6>Gracias por escribirnos, le atiende Carlos, <br>¿con quién tengo el gusto?</h6>
+                </div>
+
+
+                <div class="box-writter-chatbox">
+                    <textarea cols="2" rows="2"></textarea>
+                    <div class="btn-send-chatbox">
+                        <a href="https://api.whatsapp.com/send?phone=+525633120174&text=Hola Bienvenidos a Mexico Internet Exchange. Soy su servidor Carlos. Como le puedo ayudar?&20heber"><i class='fa fa-send'></i></a>
+                    </div>
+                </div>
+
+        </div>	
+
+        <div class="icon-action-comment-close">
+            <div class="icon-comment-chatbox"><i class="fa fa-comments-o"></i></div>
+            <div class="icon-close-chatbox"><i class="fa fa-close"></i></div>
+        </div>
+</div>-->
+
+
+</body>
+
+<script type="text/javascript">
+
+let boxTexto=document.querySelector(".box-text-formulario");
+let nombreEmpresa=document.querySelector(".nombreempresa");
+let calle=document.querySelector(".calle");
+let numero=document.querySelector(".numero");
+let colonia=document.querySelector(".colonia");
+let ciudad=document.querySelector(".ciudad");
+let cp=document.querySelector(".postal");
+let nombrepersona=document.querySelector(".nombrepersona");
+let telefone=document.querySelector(".telefone");
+let email=document.querySelector(".email");
+let btnEnviarDireccion=document.querySelector(".btn-enviar-direccion");
+let menuResponsive=document.querySelector(".menu-responsive");
+let iconMenu=document.querySelector(".icon-menu");
+
+iconMenu.onclick=function() {
+	let menu=document.querySelector(".menu");
+	menu.classList.toggle("menu-Opacity");
+  }
+
+btnEnviarDireccion.onclick=function(){
+
+if(nombreEmpresa.value=="" || calle.value=="" || numero.value=="" || colonia.value=="" || ciudad.value=="" || cp.value=="" || nombrepersona.value=="" || telefone.value=="" || email.value==""){
+
+        alert("Por favor, rellena los campos vacios.");
+        /*|| calle.value=="" || numero.value=="" || colonia.value=="" || cp.value=="" || nombrepersona.value=="" || telefone.value=="" || email.value==""*/
+
+        nombreEmpresa.style="border:1px red solid";
+        calle.style="border:1px red solid";
+        numero.style="border:1px red solid";
+        colonia.style="border:1px red solid";
+        cp.style="border:1px red solid";
+        nombrepersona.style="border:1px red solid";
+        telefone.style="border:1px red solid";
+        email.style="border:1px red solid";
+
+        return false;	
+}else if(!nombreEmpresa.value=="" && !calle.value=="" && !numero.value=="" && !colonia.value=="" && !ciudad.value=="" && !cp.value=="" && !nombrepersona.value=="" && !telefone.value=="" && !email.value==""){
+        alert("Sus datos fueron enviados con sucesso!");
+        /*&& !calle.value=="" && !numero.value=="" && !colonia.value=="" && !cp.value=="" && !nombrepersona.value=="" && !telefone.value=="" && !email.value==""*/
+
+}
+}
+
+
+nombreEmpresa.onfocus = function(){
+nombreEmpresa.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+calle.onfocus = function(){
+calle.style="outline:2px blue solid ; transition:0.5s";
+}
+
+numero.onfocus = function(){
+numero.style="outline:2px blue solid ; transition:0.5s";
+}
+
+colonia.onfocus = function(){
+colonia.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+ciudad.onfocus = function(){
+ciudad.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+cp.onfocus = function(){
+cp.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+nombrepersona.onfocus = function(){
+nombrepersona.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+telefone.onfocus = function(){
+telefone.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+email.onfocus = function(){
+email.style="outline:2px blue solid ; transition:0.5s";
+}
+
+
+nombreEmpresa.onblur = function(){
+nombreEmpresa.style="outline:none";
+}
+
+
+calle.onblur = function(){
+calle.style="outline:none ; transition:0.5s";
+}
+
+numero.onblur = function(){
+numero.style="outline:none ; transition:0.5s";
+}
+
+colonia.onblur = function(){
+colonia.style="outline:nonee ; transition:0.5s";
+}
+
+
+ciudad.onblur = function(){
+ciudad.style="outline:none ; transition:0.5s";
+}
+
+
+cp.onblur = function(){
+cp.style="outline:none ; transition:0.5s";
+}
+
+
+nombrepersona.onblur = function(){
+nombrepersona.style="outline:none ; transition:0.5s";
+}
+
+
+telefone.onblur = function(){
+telefone.style="outline:none ; transition:0.5s";
+}
+
+
+email.onblur = function(){
+email.style="outline:none ; transition:0.5s";
+
+}
+</script>
+
+</html>
